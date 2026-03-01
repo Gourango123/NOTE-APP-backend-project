@@ -21,7 +21,7 @@ exports.verifyEmail = async (token, email ,name) => {
     // ⭐ Compile template
     const template = handlebars.compile(source);
 
-    const link = `http://localhost:5173/verify/${token}`;
+    const link = `https://note-app-frontend-project.vercel.app/verify/${token}`;
 
     // ⭐ HTML with data
     const html = template({ name, link });
