@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://note-app-frontend-project-6nn7sfqrw-gourango-roys-projects.vercel.app",
+    origin: ["http://localhost:5173","https://note-app-frontend-project.vercel.app"],
     credentials: true,
   })
 );
